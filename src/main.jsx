@@ -12,15 +12,18 @@ import {
   QueryClientProvider,
   useQuery,
 } from '@tanstack/react-query'
+import AuthProvider from './Providers/AuthProvider';
 
 const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>
     <React.StrictMode>
-    <HelmetProvider>
+   <AuthProvider>
+   <HelmetProvider>
     <RouterProvider router={router} />
       </HelmetProvider>
-  </React.StrictMode>,
+   </AuthProvider>
+  </React.StrictMode>
 </QueryClientProvider>
 )

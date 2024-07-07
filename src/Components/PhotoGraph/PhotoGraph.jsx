@@ -9,6 +9,8 @@ const PhotoGraph = () => {
         <title>Mehedi'S Graphy || PhotoGraph</title>
     </Helmet>
            <AllPhotos></AllPhotos>
+          
+
         </div>
     );
 };
