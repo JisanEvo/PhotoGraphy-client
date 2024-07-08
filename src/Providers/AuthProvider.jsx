@@ -37,6 +37,7 @@ const updateUserProfile = (name, photo) => {
 const signInWithGoogle = () => {
     setLoading(true)
     return signInWithPopup(auth, googleProvider)
+    
   }
 
     useEffect(() => {

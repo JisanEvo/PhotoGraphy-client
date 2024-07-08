@@ -72,9 +72,10 @@ import { Link } from 'react-router-dom';
 import logbg from '../../../public/Documents/log.jpg';
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext)
+    const { signIn } = useAuth()
     const handleLogin = async e => {
         e.preventDefault();
         const form = e.target;
